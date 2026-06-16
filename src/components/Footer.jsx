@@ -92,7 +92,7 @@ export default function Footer() {
         {/* Left Side: Copyright */}
         <div className="text-center md:text-left space-y-1.5">
           <p className="text-sm font-bold text-slate-900 dark:text-white">
-            Alex Morgan
+            Janak Baldaniya
           </p>
           <p className="text-xs font-semibold text-slate-500 dark:text-slate-450">
             © {currentYear} Janak Baldaniya. All rights reserved. Recruiter-focused portfolio.
