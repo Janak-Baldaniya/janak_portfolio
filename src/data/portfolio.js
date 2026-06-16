@@ -6,7 +6,7 @@ export const portfolioData = {
     title: "Full Stack Developer",
     experienceStat: "1 Year Of Experience",
     bio: "I build responsive, high-performance, and visually engaging web applications. Specializing in modern JavaScript frameworks, robust API design, and clean user experiences, I focus on writing maintainable code that solves real-world business problems.",
-    resumeUrl: "https://drive.google.com/file/d/14R-qhhqJZFlWi5A42EhXU9uyFh03P_WD/view?usp=drive_link", // Can be replaced with a real URL or local path
+    resumeUrl: "https://drive.google.com/file/d/18tsMKr5CTrZlH2ytgyfZRbnLKPsZLWjZ/view?usp=drive_link", // Can be replaced with a real URL or local path
     avatarUrl: "/janak.jpeg" // High-quality profile photo
   },
   socialLinks: {
