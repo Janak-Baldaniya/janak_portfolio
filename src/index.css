@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --color-accent-blue: #6366f1; /* Electric Indigo */
+  --color-accent-blue-dark: #4f46e5;
+  --color-accent-purple: #a855f7;
+  --color-accent-cyan: #06b6d4;
+  --color-accent-pink: #ec4899;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: initial;
+}
+
+html, body {
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+.dark html, .dark body {
+  background-color: #030712; /* Slate 950 */
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+  border: 2.5px solid transparent;
+  background-clip: padding-box;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border: 2.5px solid #030712;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+  border: 2.5px solid transparent;
+  background-clip: padding-box;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+  border: 2.5px solid #030712;
+  background-clip: padding-box;
+}
+
+/* Custom smooth transitions for theme switches */
+.theme-transition {
+  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s cubic-bezier(0.16, 1, 0.3, 1), fill 0.4s cubic-bezier(0.16, 1, 0.3, 1), stroke 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Lenis smooth scrolling layout setups */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Background noise texture overlay */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.015;
+  pointer-events: none;
+  z-index: 9999;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+.dark .noise-overlay {
+  opacity: 0.025;
+}
+
+/* Interactive elements styles */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-accent-blue) 0%, var(--color-accent-purple) 50%, var(--color-accent-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.gradient-text-alt {
+  background: linear-gradient(135deg, var(--color-accent-pink) 0%, var(--color-accent-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Glassmorphism helpers */
+.glass-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.dark .glass-card {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Floating animation for subtle aesthetic objects */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Timeline glowing animation track */
+.timeline-track-glow {
+  background: linear-gradient(to bottom, var(--color-accent-blue) 0%, var(--color-accent-purple) 50%, var(--color-accent-cyan) 100%);
+  box-shadow: 0 0 15px var(--color-accent-blue);
+}
+
