@@ -89,7 +89,7 @@ export default function LinkedInSection() {
               {/* Profile Pic with LinkedIn tag */}
               <div className="relative shrink-0">
                 <img
-                  src = "/linkdin.jpeg"
+                  src = "/linkdin.jpg"
                   alt={personalInfo.fullName}
                   className="w-20 h-20 rounded-full object-cover border-2 border-slate-100 dark:border-slate-900 shadow-2xs"
                   loading="lazy"
