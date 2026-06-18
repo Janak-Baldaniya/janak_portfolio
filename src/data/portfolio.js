@@ -6,7 +6,7 @@ export const portfolioData = {
     title: "Full Stack Developer",
     experienceStat: "1 Year Of Experience",
     bio: "I build responsive, high-performance, and visually engaging web applications. Specializing in modern JavaScript frameworks, robust API design, and clean user experiences, I focus on writing maintainable code that solves real-world business problems.",
-    resumeUrl: "https://drive.google.com/file/d/18tsMKr5CTrZlH2ytgyfZRbnLKPsZLWjZ/view?usp=drive_link", // Can be replaced with a real URL or local path
+    resumeUrl: "https://drive.google.com/file/d/1obVJUEEXJrqCKoZntsJ62N0miRsBYAaK/view?usp=sharing", // Can be replaced with a real URL or local path
     avatarUrl: "/janak.jpeg" // High-quality profile photo
   },
   socialLinks: {
@@ -111,28 +111,28 @@ export const portfolioData = {
       title: "Web Developer",
       issuer: "UNISTAR SOFTECH PRIVATE LIMITED",
 
-      certificateLink: "https://drive.google.com/file/d/183C3EpAcaetfWNmvVZ15p31lI9FThtPY/view?usp=drive_link"
+      certificateLink: "https://drive.google.com/file/d/183C3EpAcaetfWNmvVZ15p31lI9FThtPY/view?usp=sharing"
     },
     {
       id: 2,
       title: "Database System Assistant",
       issuer: "BITKHANAN IT EDUCATION",
 
-      certificateLink: "https://drive.google.com/file/d/1I0cSwSJhdTSMX7QS4A88gsrmuqW5imXW/view?usp=drive_link"
+      certificateLink: "https://drive.google.com/file/d/1I0cSwSJhdTSMX7QS4A88gsrmuqW5imXW/view?usp=sharing"
     },
     {
       id: 3,
       title: "user Experience Designer",
       issuer: "PIXETA APP LAB",
 
-      certificateLink: "https://drive.google.com/file/d/1MCVkYzP1HaKR8MJaDN6s7tAua_ZtIn9H/view?usp=drive_link"
+      certificateLink: "https://drive.google.com/file/d/1MCVkYzP1HaKR8MJaDN6s7tAua_ZtIn9H/view?usp=sharing"
     },
     {
       id: 4,
       title: "Android Programming",
       issuer: "TECHIE BROTHERS",
 
-      certificateLink: "https://drive.google.com/file/d/1HQiho1J69KQs_m_7nfpjPQFMMCxsMPX6/view?usp=drive_link"
+      certificateLink: "https://drive.google.com/file/d/1HQiho1J69KQs_m_7nfpjPQFMMCxsMPX6/view?usp=sharing"
     },
 
   ],
